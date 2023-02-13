@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+  background: rgba(5, 33, 95, 1)
+    url(./static/images/ad1415ff-238e-482b-9d3d-aff68bb204d0.png) no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  transform-origin: 0px 0px;
+  filter: hue-rotate(0deg) saturate(100%) brightness(100%) contrast(100%)
+    opacity(100%) grayscale(0%);
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+#location5 {
+  overflow: hidden;
+  position: absolute;
+  left: 84.15px;
+  top: 735.19px;
+  width: 46.41px;
+  height: 45.77px;
+  z-index: 16;
+  transform: rotate(0deg);
+}
+#div_video {
+  overflow: hidden;
+  position: absolute;
+  left: 813.64px;
+  top: 231.82px;
+  width: 1080px;
+  height: 630.91px;
+  z-index: 15;
+  transform: rotate(0deg);
+}
+#item25030a4c-95c0-4df4-8790-66a4f2899b73 {
+  overflow: hidden;
+  position: absolute;
+  left: 788px;
+  top: 112.96px;
+  width: 1100.36px;
+  height: 937.73px;
+  z-index: 14;
+  transform: rotate(0deg);
+}
+#location10 {
+  overflow: hidden;
+  position: absolute;
+  left: 351.01px;
+  top: 678.83px;
+  width: 46.41px;
+  height: 45.77px;
+  z-index: 13;
+  transform: rotate(0deg);
+}
+#location8 {
+  overflow: hidden;
+  position: absolute;
+  left: 262.75px;
+  top: 875.05px;
+  width: 46.41px;
+  height: 45.77px;
+  z-index: 12;
+  transform: rotate(0deg);
+}
+#location2 {
+  overflow: hidden;
+  position: absolute;
+  left: 277.73px;
+  top: 675.88px;
+  width: 46.41px;
+  height: 45.77px;
+  z-index: 11;
+  transform: rotate(0deg);
+}
+#location3 {
+  overflow: hidden;
+  position: absolute;
+  left: 78.29px;
+  top: 478.82px;
+  width: 46.41px;
+  height: 45.77px;
+  z-index: 10;
+  transform: rotate(0deg);
+}
+#location6 {
+  overflow: hidden;
+  position: absolute;
+  left: 78.28px;
+  top: 389.73px;
+  width: 46.41px;
+  height: 45.77px;
+  z-index: 9;
+  transform: rotate(0deg);
+}
+#location4 {
+  overflow: hidden;
+  position: absolute;
+  left: 80.1px;
+  top: 284.28px;
+  width: 46.41px;
+  height: 45.77px;
+  z-index: 8;
+  transform: rotate(0deg);
+}
+#location7 {
+  overflow: hidden;
+  position: absolute;
+  left: 387.37px;
+  top: 440.65px;
+  width: 46.41px;
+  height: 45.77px;
+  z-index: 7;
+  transform: rotate(0deg);
+}
+#location_in2 {
+  overflow: hidden;
+  position: absolute;
+  left: 190.32px;
+  top: 764.5px;
+  width: 50.97px;
+  height: 44.99px;
+  z-index: 6;
+  transform: rotate(0deg);
+}
+#location_in1 {
+  overflow: hidden;
+  position: absolute;
+  left: 155.91px;
+  top: 519.46px;
+  width: 50.97px;
+  height: 48.06px;
+  z-index: 5;
+  transform: rotate(0deg);
+}
+#location9 {
+  overflow: hidden;
+  position: absolute;
+  left: 296.46px;
+  top: 273.37px;
+  width: 46.41px;
+  height: 45.77px;
+  z-index: 4;
+  transform: rotate(0deg);
+}
+#itemed341f40-a94f-11ed-bd7f-59a82614e004 {
+  overflow: hidden;
+  position: absolute;
+  left: 762.5px;
+  top: 25px;
+  width: 382.5px;
+  height: 50px;
+  z-index: 3;
+  transform: rotate(0deg);
+}
+#itemee494e37-030d-45e3-8ec4-d3cae0e0f821 {
+  overflow: hidden;
+  position: absolute;
+  left: 3.5px;
+  top: 7.5px;
+  width: 1916.5px;
+  height: 92px;
+  z-index: 2;
+  transform: rotate(0deg);
+}
+#itemead80d10-aadf-11ed-a84e-396548434efa {
+  overflow: hidden;
+  position: absolute;
+  left: 13.23px;
+  top: 101.09px;
+  width: 749.91px;
+  height: 941.46px;
+  z-index: 1;
+  transform: rotate(0deg);
+}
+#item68768431-6651-4857-8065-79bb928e6075 {
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 749.91px;
+  height: 941.46px;
+  z-index: 5;
+  transform: rotate(0deg);
+}
+#itemf9c018e0-a94f-11ed-bd7f-59a82614e004 {
+  overflow: hidden;
+  position: absolute;
+  left: 26.1px;
+  top: 32.98px;
+  width: 688.28px;
+  height: 893.5px;
+  z-index: 3;
+  transform: rotate(0deg);
+}
+
+
+/*视频挂载*/
+.iframe_video {
+  position: relative;
+  width: 98%;
+}
+
+@media only screen and (max-width: 767px) {
+  .iframe_video {
+    height: 15em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .iframe_video {
+    height: 20em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .iframe_video {
+    height: 30em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .iframe_video {
+    height: 40em;
+  }
+}
+
+.iframe_cross {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%
+}
+
+.iframe_cross iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0
+}

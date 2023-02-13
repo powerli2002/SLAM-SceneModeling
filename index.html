@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:background-image="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./static//images/windows-icon@2x.ico" />
+
+    <title>微兔可视化 | 演示预览</title>
+
+    <!-- 轮播swiper插件样式 -->
+    <link rel="stylesheet" href="./static/js/swiper/swiper.min.css" />
+    <!-- 翻牌器 -->
+    <link rel="stylesheet" href="./static/js/cubeflop/cubeflop.css" />
+
+    <!-- 补间动画包 -->
+    <link rel="stylesheet" href="./static/css/custom-animation.css" />
+
+    <!-- 重置样式 -->
+    <link rel="stylesheet" href="./static/css/reset.css" />
+
+    <!-- 当前页面样式文件 -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- jquery -->
+    <script src="./static/js/jquery.min.js"></script>
+    <!-- echarts -->
+    <script src="./static/js/echarts/echarts.min.js"></script>
+    <!-- echarts 水球图 -->
+    <script src="./static/js/echarts/echarts-liquidfill.min.js"></script>
+    <!-- echarts 词云 -->
+    <script src="./static/js/echarts/echarts-wordcloud.min.js"></script>
+    <!-- javascript工具库 -->
+    <script src="./static/js/lodash.min.js"></script>
+    <!-- 二维码插件 -->
+    <script src="./static/js/qrcode.min.js"></script>
+    <!-- 轮播插件 -->
+    <script src="./static/js/swiper/swiper.min.js"></script>
+    <!-- 表格滚动插件 -->
+    <script src="./static/js/seamscroll.min.js"></script>
+    <!-- day 日期插件 -->
+    <script src="./static/js/dayjs/dayjs.min.js"></script>
+    <script src="./static/js/dayjs/zh-cn.js"></script>
+    <!-- 工具类 -->
+    <script src="./static/js/utils.js"></script>
+    <!-- 滚动数字所需要的插件 -->
+    <script src="./static/js/jquery.countTo.js"></script>
+    <!-- 翻牌器 -->
+    <script src="./static/js/cubeflop/cubeflop.js"></script>
+    <!-- d3 -->
+    <script src="./static/js/d3.js"></script>
+
+    <!-- 感谢使用微兔可视化，目前处于内测阶段，存在很多的不足开发人员在不断完善中，请谅解~ -->
+  </head>
+
+  <body>
+
+    <script>
+      const videos = [
+        "//player.bilibili.com/player.html?aid=436864072&bvid=BV1bj411N79J&cid=1004811367&page=1",
+        "//player.bilibili.com/player.html?aid=821792144&bvid=BV1qG4y1K7D7&cid=1004813314&page=1",
+        "//player.bilibili.com/player.html?aid=736790635&bvid=BV1iD4y1P7ZP&cid=1004820553&page=1",
+        "//player.bilibili.com/player.html?aid=394317329&bvid=BV1yo4y1v73Y&cid=1004820751&page=1",
+        "//player.bilibili.com/player.html?aid=906839580&bvid=BV1jM4y1S7py&cid=1004820694&page=1",
+              "//player.bilibili.com/player.html?aid=906833285&bvid=BV1pM4y1S7Zd&cid=1004825121&page=1",
+              "//player.bilibili.com/player.html?aid=694363012&bvid=BV1Y24y1s7ic&cid=1004816622&page=1",
+              "//player.bilibili.com/player.html?aid=779290845&bvid=BV1X14y1c7C5&cid=1004816520&page=1",
+              "//player.bilibili.com/player.html?aid=436838813&bvid=BV1Hj411N7on&cid=1004823640&page=1",
+              "//player.bilibili.com/player.html?aid=266789536&bvid=BV1vY411i7Nx&cid=1004823639&page=1",
+              "//player.bilibili.com/player.html?aid=651787619&bvid=BV1ne4y1w7En&cid=1004816482&page=1"
+
+      ];
+
+      function playVideo(index){
+        let select_video = document.getElementById("iframe");
+        select_video.src = videos[index - 2];
+      }
+
+
+    </script>
+
+    <div class="container">
+      <!-- 组件1ed59ff0-aae6-11ed-b774-4780d8aecb95开始-->
+
+      <div id="location5">
+        <img src="" alt="" />
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 183 111"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="183" height="111" fill="#14202D" />
+          <circle cx="130.552" cy="24.8774" r="6" fill="#43E8F3" />
+          <path
+            opacity="0.5"
+            d="M131.509 74L80.0186 111H183L131.509 74Z"
+            fill="url(#paint0_linear_1233:1875)"
+          />
+          <path
+            d="M66.1027 56.6328L0 111H132.205L66.1027 56.6328Z"
+            fill="url(#paint1_linear_1233:1875)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_1233:1875"
+              x1="131.797"
+              y1="112.088"
+              x2="141.911"
+              y2="79.5955"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3D9CFF" />
+              <stop offset="1" stop-color="#43E8F3" />
+            </linearGradient>
+            <linearGradient
+              id="paint1_linear_1233:1875"
+              x1="66.4719"
+              y1="112.599"
+              x2="83.0284"
+              y2="66.1275"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3D9CFF" />
+              <stop offset="1" stop-color="#43E8F3" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <script type="text/javascript">
+        $(function() {
+            // 基于准备好的dom，初始化echarts实例
+            // 指定图表的配置项
+            let option = {};
+
+            // 指定文字的数据
+            let data = [{"url":"https://cdn.staticaly.com/gh/powerli2002/project-img@main/location.5ihnbhiajsk0.png"}]
+
+            data = data.map(item =>{
+              return {url: item['url']}
+            })
+            $("#location5 img").attr("src", data[0].url)
+            if(data[0].url) {
+              $("#location5 svg").css('display', 'none')
+              $("#location5 img").css('display', 'block')
+            }else {
+              $("#location5 img").css('display', 'none')
+              $("#location5 svg").css('display', 'block')
+            }
+        })
+      </script>
+
+      <style>
+        #location5{
+          width: 46.41px;
+          height: 45.77px;
+        }
+        #location5 img {
+          width: 100%;
+          height: 100%;
+        }
+      </style>
+      <!-- 组件1ed59ff0-aae6-11ed-b774-4780d8aecb95结束-->
+
+      <!-- 组件c9fabe10-aae1-11ed-a84e-396548434efa开始-->
+
+      <div id="div_video">
+
+        <iframe id="iframe" class="iframe_video" border="0"  framespacing="0" allowfullscreen="true" )> </iframe>
+      </div>
+
+<!--      <script type="text/javascript">-->
+<!--        $(function() {-->
+<!--            // 基于准备好的dom，初始化echarts实例-->
+<!--            // 指定图表的配置项-->
+<!--            let option = {"isControlsShow":true,"isAutoPlay":false,"isLoop":false,"paly":false,"volume":0.5};-->
+
+<!--            // 指定文字的数据-->
+<!--            let data = [{"url":"http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"}]-->
+
+<!--            data = data.map(item =>{-->
+<!--              return {url: item['url']}-->
+<!--            })-->
+<!--            let parentNode = document.getElementById("div_video")-->
+<!--            parentNode.innerHTML = null-->
+<!--            let videoNode = document.createElement('video')-->
+<!--            videoNode.style.width = '100%'-->
+<!--            videoNode.style.height = '100%'-->
+<!--            videoNode.muted = "muted"-->
+<!--            videoNode.controls = option.isControlsShow-->
+<!--            videoNode.autoplay = option.isAutoPlay-->
+<!--            videoNode.loop = option.isLoop-->
+<!--            let sourceNode = document.createElement("source")-->
+<!--            sourceNode.src = data[0].url-->
+<!--            videoNode.appendChild(sourceNode)-->
+<!--            parentNode.appendChild(videoNode)-->
+<!--        })-->
+<!--      </script>-->
+
+      <!-- 组件c9fabe10-aae1-11ed-a84e-396548434efa结束-->
+
+      <!-- 组件25030a4c-95c0-4df4-8790-66a4f2899b73开始-->
+
+      <div id="item25030a4c-95c0-4df4-8790-66a4f2899b73">
+        <img
+          src="./static/images/b62d815d-a013-4f29-b4ab-ced35dc64637.png"
+          alt=""
+        />
+      </div>
+      <style>
+        #item25030a4c-95c0-4df4-8790-66a4f2899b73 {
+          width: 1100.36px;
+          height: 937.73px;
+        }
+        #item25030a4c-95c0-4df4-8790-66a4f2899b73 img {
+          width: 100%;
+          height: 100%
+        }
+      </style>
+      <!-- 组件25030a4c-95c0-4df4-8790-66a4f2899b73结束-->
+
+      <!-- 组件a328d880-aae1-11ed-a84e-396548434efa开始-->
+
+      <div id="location10">
+        <img src="" alt="" onclick="playVideo(10);"/>
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 183 111"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="183" height="111" fill="#14202D" />
+          <circle cx="130.552" cy="24.8774" r="6" fill="#43E8F3" />
+          <path
+            opacity="0.5"
+            d="M131.509 74L80.0186 111H183L131.509 74Z"
+            fill="url(#paint0_linear_1233:1875)"
+          />
+          <path
+            d="M66.1027 56.6328L0 111H132.205L66.1027 56.6328Z"
+            fill="url(#paint1_linear_1233:1875)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_1233:1875"
+              x1="131.797"
+              y1="112.088"
+              x2="141.911"
+              y2="79.5955"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3D9CFF" />
+              <stop offset="1" stop-color="#43E8F3" />
+            </linearGradient>
+            <linearGradient
+              id="paint1_linear_1233:1875"
+              x1="66.4719"
+              y1="112.599"
+              x2="83.0284"
+              y2="66.1275"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3D9CFF" />
+              <stop offset="1" stop-color="#43E8F3" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <script type="text/javascript">
+        $(function() {
+            // 基于准备好的dom，初始化echarts实例
+            // 指定图表的配置项
+            let option = {};
+
+            // 指定文字的数据
+            let data = [{"url":"https://cdn.staticaly.com/gh/powerli2002/project-img@main/location.5ihnbhiajsk0.png"}]
+
+            data = data.map(item =>{
+              return {url: item['url']}
+            })
+            $("#location10 img").attr("src", data[0].url)
+            if(data[0].url) {
+              $("#location10 svg").css('display', 'none')
+              $("#location10 img").css('display', 'block')
+            }else {
+              $("#location10 img").css('display', 'none')
+              $("#location10 svg").css('display', 'block')
+            }
+        })
+      </script>
+
+      <style>
+        #location10{
+          width: 46.41px;
+          height: 45.77px;
+        }
+        #location10 img {
+          width: 100%;
+          height: 100%;
+        }
+      </style>
+      <!-- 组件a328d880-aae1-11ed-a84e-396548434efa结束-->
+
+      <!-- 组件9f329810-aae1-11ed-a84e-396548434efa开始-->
+
+      <div id="location8">
+        <img src="" alt="" onclick="playVideo(8);"/>
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 183 111"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="183" height="111" fill="#14202D"/>
+          <circle cx="130.552" cy="24.8774" r="6" fill="#43E8F3" />
+          <path
+            opacity="0.5"
+            d="M131.509 74L80.0186 111H183L131.509 74Z"
+            fill="url(#paint0_linear_1233:1875)"
+          />
+          <path
+            d="M66.1027 56.6328L0 111H132.205L66.1027 56.6328Z"
+            fill="url(#paint1_linear_1233:1875)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_1233:1875"
+              x1="131.797"
+              y1="112.088"
+              x2="141.911"
+              y2="79.5955"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3D9CFF" />
+              <stop offset="1" stop-color="#43E8F3" />
+            </linearGradient>
+            <linearGradient
+              id="paint1_linear_1233:1875"
+              x1="66.4719"
+              y1="112.599"
+              x2="83.0284"
+              y2="66.1275"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3D9CFF" />
+              <stop offset="1" stop-color="#43E8F3" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <script type="text/javascript">
+        $(function() {
+            // 基于准备好的dom，初始化echarts实例
+            // 指定图表的配置项
+            let option = {};
+
+            // 指定文字的数据
+            let data = [{"url":"https://cdn.staticaly.com/gh/powerli2002/project-img@main/location.5ihnbhiajsk0.png"}]
+
+            data = data.map(item =>{
+              return {url: item['url']}
+            })
+            $("#location8 img").attr("src", data[0].url)
+            if(data[0].url) {
+              $("#location8 svg").css('display', 'none')
+              $("#location8 img").css('display', 'block')
+            }else {
+              $("#location8 img").css('display', 'none')
+              $("#location8 svg").css('display', 'block')
+            }
+        })
+      </script>
+
+      <style>
+        #location8{
+          width: 46.41px;
+          height: 45.77px;
+        }
+        #location8 img {
+          width: 100%;
+          height: 100%;
+        }
+      </style>
+      <!-- 组件9f329810-aae1-11ed-a84e-396548434efa结束-->
+
+      <!-- 组件97c70700-aae1-11ed-a84e-396548434efa开始-->
+
+      <div id="location2">
+        <img src="" alt="" onclick="playVideo(2);"/>
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 183 111"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="183" height="111" fill="#14202D" />
+          <circle cx="130.552" cy="24.8774" r="6" fill="#43E8F3" />
+          <path
+            opacity="0.5"
+            d="M131.509 74L80.0186 111H183L131.509 74Z"
+            fill="url(#paint0_linear_1233:1875)"
+          />
+          <path
+            d="M66.1027 56.6328L0 111H132.205L66.1027 56.6328Z"
+            fill="url(#paint1_linear_1233:1875)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_1233:1875"
+              x1="131.797"
+              y1="112.088"
+              x2="141.911"
+              y2="79.5955"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3D9CFF" />
+              <stop offset="1" stop-color="#43E8F3" />
+            </linearGradient>
+            <linearGradient
+              id="paint1_linear_1233:1875"
+              x1="66.4719"
+              y1="112.599"
+              x2="83.0284"
+              y2="66.1275"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3D9CFF" />
+              <stop offset="1" stop-color="#43E8F3" />
+            </linearGradient>
+          </defs>
+
+        </svg>
+      </div>
+
+      <script type="text/javascript">
+        $(function() {
+            // 基于准备好的dom，初始化echarts实例
+            // 指定图表的配置项
+            let option = {};
+
+            // 指定文字的数据
+            let data = [{"url":"https://cdn.staticaly.com/gh/powerli2002/project-img@main/location.5ihnbhiajsk0.png"}]
+
+            data = data.map(item =>{
+              return {url: item['url']}
+            })
+            $("#location2 img").attr("src", data[0].url)
+            if(data[0].url) {
+              $("#location2 svg").css('display', 'none')
+              $("#location2 img").css('display', 'block')
+            }else {
+              $("#location2 img").css('display', 'none')
+              $("#location2 svg").css('display', 'block')
+            }
+
+
+
+            // var img = document.getElementById("location2");
+            // // img.onclick() = playVideo(2);
+            // img.onclick = function (){
+            //   let select_video = document.getElementById("iframe");
+            //   select_video.src = videos[index - 2];
+            // }
+        })
+      </script>
+
+      <style>
+        #location2{
+          width: 46.41px;
+          height: 45.77px;
+        }
+        #location2 img {
+          width: 100%;
+          height: 100%;
+        }
+      </style>
+      <!-- 组件97c70700-aae1-11ed-a84e-396548434efa结束-->
+
+      <!-- 组件91d4a870-aae1-11ed-a84e-396548434efa开始-->
+
+      <div id="location3">
+        <img src="" alt="" onclick="playVideo(3);"/>
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 183 111"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="183" height="111" fill="#14202D" />
+          <circle cx="130.552" cy="24.8774" r="6" fill="#43E8F3" />
+          <path
+            opacity="0.5"
+            d="M131.509 74L80.0186 111H183L131.509 74Z"
+            fill="url(#paint0_linear_1233:1875)"
+          />
+          <path
+            d="M66.1027 56.6328L0 111H132.205L66.1027 56.6328Z"
+            fill="url(#paint1_linear_1233:1875)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_1233:1875"
+              x1="131.797"
+              y1="112.088"
+              x2="141.911"
+              y2="79.5955"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3D9CFF" />
+              <stop offset="1" stop-color="#43E8F3" />
+            </linearGradient>
+            <linearGradient
+              id="paint1_linear_1233:1875"
+              x1="66.4719"
+              y1="112.599"
+              x2="83.0284"
+              y2="66.1275"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3D9CFF" />
+              <stop offset="1" stop-color="#43E8F3" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <script type="text/javascript">
+        $(function() {
+            // 基于准备好的dom，初始化echarts实例
+            // 指定图表的配置项
+            let option = {};
+
+            // 指定文字的数据
+            let data = [{"url":"https://cdn.staticaly.com/gh/powerli2002/project-img@main/location.5ihnbhiajsk0.png"}]
+
+            data = data.map(item =>{
+              return {url: item['url']}
+            })
+            $("#location3 img").attr("src", data[0].url)
+            if(data[0].url) {
+              $("#location3 svg").css('display', 'none')
+              $("#location3 img").css('display', 'block')
+            }else {
+              $("#location3 img").css('display', 'none')
+              $("#location3 svg").css('display', 'block')
+            }
+        })
+      </script>
+
+      <style>
+        #location3{
+          width: 46.41px;
+          height: 45.77px;
+        }
+        #location3 img {
+          width: 100%;
+          height: 100%;
+        }
+      </style>
+      <!-- 组件91d4a870-aae1-11ed-a84e-396548434efa结束-->
+
+      <!-- 组件8fac9850-aae1-11ed-a84e-396548434efa开始-->
+
+      <div id="location6">
+        <img src="" alt="" onclick="playVideo(6);"/>
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 183 111"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="183" height="111" fill="#14202D" />
+          <circle cx="130.552" cy="24.8774" r="6" fill="#43E8F3" />
+          <path
+            opacity="0.5"
+            d="M131.509 74L80.0186 111H183L131.509 74Z"
+            fill="url(#paint0_linear_1233:1875)"
+          />
+          <path
+            d="M66.1027 56.6328L0 111H132.205L66.1027 56.6328Z"
+            fill="url(#paint1_linear_1233:1875)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_1233:1875"
+              x1="131.797"
+              y1="112.088"
+              x2="141.911"
+              y2="79.5955"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3D9CFF" />
+              <stop offset="1" stop-color="#43E8F3" />
+            </linearGradient>
+            <linearGradient
+              id="paint1_linear_1233:1875"
+              x1="66.4719"
+              y1="112.599"
+              x2="83.0284"
+              y2="66.1275"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3D9CFF" />
+              <stop offset="1" stop-color="#43E8F3" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <script type="text/javascript">
+        $(function() {
+            // 基于准备好的dom，初始化echarts实例
+            // 指定图表的配置项
+            let option = {};
+
+            // 指定文字的数据
+            let data = [{"url":"https://cdn.staticaly.com/gh/powerli2002/project-img@main/location.5ihnbhiajsk0.png"}]
+
+            data = data.map(item =>{
+              return {url: item['url']}
+            })
+            $("#location6 img").attr("src", data[0].url)
+            if(data[0].url) {
+              $("#location6 svg").css('display', 'none')
+              $("#location6 img").css('display', 'block')
+            }else {
+              $("#location6 img").css('display', 'none')
+              $("#location6 svg").css('display', 'block')
+            }
+        })
+      </script>
+
+      <style>
+        #location6{
+          width: 46.41px;
+          height: 45.77px;
+        }
+        #location6 img {
+          width: 100%;
+          height: 100%;
+        }
+      </style>
+      <!-- 组件8fac9850-aae1-11ed-a84e-396548434efa结束-->
+
+      <!-- 组件84f3b100-aae1-11ed-a84e-396548434efa开始-->
+
+      <div id="location4">
+        <img src="" alt="" />
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 183 111"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="183" height="111" fill="#14202D" />
+          <circle cx="130.552" cy="24.8774" r="6" fill="#43E8F3" />
+          <path
+            opacity="0.5"
+            d="M131.509 74L80.0186 111H183L131.509 74Z"
+            fill="url(#paint0_linear_1233:1875)"
+          />
+          <path
+            d="M66.1027 56.6328L0 111H132.205L66.1027 56.6328Z"
+            fill="url(#paint1_linear_1233:1875)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_1233:1875"
+              x1="131.797"
+              y1="112.088"
+              x2="141.911"
+              y2="79.5955"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3D9CFF" />
+              <stop offset="1" stop-color="#43E8F3" />
+            </linearGradient>
+            <linearGradient
+              id="paint1_linear_1233:1875"
+              x1="66.4719"
+              y1="112.599"
+              x2="83.0284"
+              y2="66.1275"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3D9CFF" />
+              <stop offset="1" stop-color="#43E8F3" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <script type="text/javascript">
+        $(function() {
+            // 基于准备好的dom，初始化echarts实例
+            // 指定图表的配置项
+            let option = {};
+
+            // 指定文字的数据
+            let data = [{"url":"https://cdn.staticaly.com/gh/powerli2002/project-img@main/location.5ihnbhiajsk0.png"}]
+
+            data = data.map(item =>{
+              return {url: item['url']}
+            })
+            $("#location4 img").attr("src", data[0].url)
+            if(data[0].url) {
+              $("#location4 svg").css('display', 'none')
+              $("#location4 img").css('display', 'block')
+            }else {
+              $("#location4 img").css('display', 'none')
+              $("#location4 svg").css('display', 'block')
+            }
+        })
+      </script>
+
+      <style>
+        #location4{
+          width: 46.41px;
+          height: 45.77px;
+        }
+        #location4 img {
+          width: 100%;
+          height: 100%;
+        }
+      </style>
+      <!-- 组件84f3b100-aae1-11ed-a84e-396548434efa结束-->
+
+      <!-- 组件755a5050-aae1-11ed-a84e-396548434efa开始-->
+
+      <div id="location7">
+        <img src="" alt="" onclick="playVideo(7);"/>
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 183 111"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="183" height="111" fill="#14202D" />
+          <circle cx="130.552" cy="24.8774" r="6" fill="#43E8F3" />
+          <path
+            opacity="0.5"
+            d="M131.509 74L80.0186 111H183L131.509 74Z"
+            fill="url(#paint0_linear_1233:1875)"
+          />
+          <path
+            d="M66.1027 56.6328L0 111H132.205L66.1027 56.6328Z"
+            fill="url(#paint1_linear_1233:1875)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_1233:1875"
+              x1="131.797"
+              y1="112.088"
+              x2="141.911"
+              y2="79.5955"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3D9CFF" />
+              <stop offset="1" stop-color="#43E8F3" />
+            </linearGradient>
+            <linearGradient
+              id="paint1_linear_1233:1875"
+              x1="66.4719"
+              y1="112.599"
+              x2="83.0284"
+              y2="66.1275"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3D9CFF" />
+              <stop offset="1" stop-color="#43E8F3" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <script type="text/javascript">
+        $(function() {
+            // 基于准备好的dom，初始化echarts实例
+            // 指定图表的配置项
+            let option = {};
+
+            // 指定文字的数据
+            let data = [{"url":"https://cdn.staticaly.com/gh/powerli2002/project-img@main/location.5ihnbhiajsk0.png"}]
+
+            data = data.map(item =>{
+              return {url: item['url']}
+            })
+            $("#location7 img").attr("src", data[0].url)
+            if(data[0].url) {
+              $("#location7 svg").css('display', 'none')
+              $("#location7 img").css('display', 'block')
+            }else {
+              $("#location7 img").css('display', 'none')
+              $("#location7 svg").css('display', 'block')
+            }
+        })
+      </script>
+
+      <style>
+        #location7{
+          width: 46.41px;
+          height: 45.77px;
+        }
+        #location7 img {
+          width: 100%;
+          height: 100%;
+        }
+      </style>
+      <!-- 组件755a5050-aae1-11ed-a84e-396548434efa结束-->
+
+      <!-- 组件636ee950-aae1-11ed-a84e-396548434efa开始-->
+
+      <div id="location_in2">
+        <img src="" alt="" onclick="playVideo(12);"/>
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 183 111"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="183" height="111" fill="#14202D" />
+          <circle cx="130.552" cy="24.8774" r="6" fill="#43E8F3" />
+          <path
+            opacity="0.5"
+            d="M131.509 74L80.0186 111H183L131.509 74Z"
+            fill="url(#paint0_linear_1233:1875)"
+          />
+          <path
+            d="M66.1027 56.6328L0 111H132.205L66.1027 56.6328Z"
+            fill="url(#paint1_linear_1233:1875)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_1233:1875"
+              x1="131.797"
+              y1="112.088"
+              x2="141.911"
+              y2="79.5955"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3D9CFF" />
+              <stop offset="1" stop-color="#43E8F3" />
+            </linearGradient>
+            <linearGradient
+              id="paint1_linear_1233:1875"
+              x1="66.4719"
+              y1="112.599"
+              x2="83.0284"
+              y2="66.1275"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3D9CFF" />
+              <stop offset="1" stop-color="#43E8F3" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <script type="text/javascript">
+        $(function() {
+            // 基于准备好的dom，初始化echarts实例
+            // 指定图表的配置项
+            let option = {};
+
+            // 指定文字的数据
+            let data = [{"url":"https://cdn.staticaly.com/gh/powerli2002/project-img@main/千库网_定位红色图标.3hw7s4vpqfi0.png"}]
+
+            data = data.map(item =>{
+              return {url: item['url']}
+            })
+            $("#location_in2 img").attr("src", data[0].url)
+            if(data[0].url) {
+              $("#location_in2 svg").css('display', 'none')
+              $("#location_in2 img").css('display', 'block')
+            }else {
+              $("#location_in2 img").css('display', 'none')
+              $("#location_in2 svg").css('display', 'block')
+            }
+        })
+      </script>
+
+      <style>
+        #location_in2{
+          width: 50.97px;
+          height: 44.99px;
+        }
+        #location_in2 img {
+          width: 100%;
+          height: 100%;
+        }
+      </style>
+      <!-- 组件636ee950-aae1-11ed-a84e-396548434efa结束-->
+
+      <!-- 组件5b5d0620-aae1-11ed-a84e-396548434efa开始-->
+
+      <div id="location_in1">
+        <img src="" alt="" onclick="playVideo(11);"/>
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 183 111"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="183" height="111" fill="#14202D" />
+          <circle cx="130.552" cy="24.8774" r="6" fill="#43E8F3" />
+          <path
+            opacity="0.5"
+            d="M131.509 74L80.0186 111H183L131.509 74Z"
+            fill="url(#paint0_linear_1233:1875)"
+          />
+          <path
+            d="M66.1027 56.6328L0 111H132.205L66.1027 56.6328Z"
+            fill="url(#paint1_linear_1233:1875)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_1233:1875"
+              x1="131.797"
+              y1="112.088"
+              x2="141.911"
+              y2="79.5955"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3D9CFF" />
+              <stop offset="1" stop-color="#43E8F3" />
+            </linearGradient>
+            <linearGradient
+              id="paint1_linear_1233:1875"
+              x1="66.4719"
+              y1="112.599"
+              x2="83.0284"
+              y2="66.1275"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3D9CFF" />
+              <stop offset="1" stop-color="#43E8F3" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <script type="text/javascript">
+        $(function() {
+            // 基于准备好的dom，初始化echarts实例
+            // 指定图表的配置项
+            let option = {};
+
+            // 指定文字的数据
+            let data = [{"url":"https://cdn.staticaly.com/gh/powerli2002/project-img@main/千库网_定位红色图标.3hw7s4vpqfi0.png"}]
+
+            data = data.map(item =>{
+              return {url: item['url']}
+            })
+            $("#location_in1 img").attr("src", data[0].url)
+            if(data[0].url) {
+              $("#location_in1 svg").css('display', 'none')
+              $("#location_in1 img").css('display', 'block')
+            }else {
+              $("#location_in1 img").css('display', 'none')
+              $("#location_in1 svg").css('display', 'block')
+            }
+        })
+      </script>
+
+      <style>
+        #location_in1{
+          width: 50.97px;
+          height: 48.06px;
+        }
+        #location_in1 img {
+          width: 100%;
+          height: 100%;
+        }
+      </style>
+      <!-- 组件5b5d0620-aae1-11ed-a84e-396548434efa结束-->
+
+      <!-- 组件2119a500-a950-11ed-bd7f-59a82614e004开始-->
+
+      <div id="location9">
+        <img src="" alt="" onclick="playVideo(9);"/>
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 183 111"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="183" height="111" fill="#14202D" />
+          <circle cx="130.552" cy="24.8774" r="6" fill="#43E8F3" />
+          <path
+            opacity="0.5"
+            d="M131.509 74L80.0186 111H183L131.509 74Z"
+            fill="url(#paint0_linear_1233:1875)"
+          />
+          <path
+            d="M66.1027 56.6328L0 111H132.205L66.1027 56.6328Z"
+            fill="url(#paint1_linear_1233:1875)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_1233:1875"
+              x1="131.797"
+              y1="112.088"
+              x2="141.911"
+              y2="79.5955"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3D9CFF" />
+              <stop offset="1" stop-color="#43E8F3" />
+            </linearGradient>
+            <linearGradient
+              id="paint1_linear_1233:1875"
+              x1="66.4719"
+              y1="112.599"
+              x2="83.0284"
+              y2="66.1275"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3D9CFF" />
+              <stop offset="1" stop-color="#43E8F3" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <script type="text/javascript">
+        $(function() {
+            // 基于准备好的dom，初始化echarts实例
+            // 指定图表的配置项
+            let option = {};
+
+            // 指定文字的数据
+            let data = [{"url":"https://cdn.staticaly.com/gh/powerli2002/project-img@main/location.5ihnbhiajsk0.png"}]
+
+            data = data.map(item =>{
+              return {url: item['url']}
+            })
+            $("#location9 img").attr("src", data[0].url)
+            if(data[0].url) {
+              $("#location9 svg").css('display', 'none')
+              $("#location9 img").css('display', 'block')
+            }else {
+              $("#location9 img").css('display', 'none')
+              $("#location9 svg").css('display', 'block')
+            }
+        })
+      </script>
+
+      <style>
+        #location9{
+          width: 46.41px;
+          height: 45.77px;
+        }
+        #location9 img {
+          width: 100%;
+          height: 100%;
+        }
+      </style>
+      <!-- 组件2119a500-a950-11ed-bd7f-59a82614e004结束-->
+
+      <!-- 组件ed341f40-a94f-11ed-bd7f-59a82614e004开始-->
+
+      <div id="itemed341f40-a94f-11ed-bd7f-59a82614e004">
+        <h1>高新区场景建模与测定</h1>
+      </div>
+
+      <style>
+        #itemed341f40-a94f-11ed-bd7f-59a82614e004 {
+          color: #ffffff;
+          display: flex;
+          text-align: center;
+          line-height: 1;
+          font-style: normal;
+          justify-content: center;
+          align-items: center;
+
+        }
+      </style>
+
+      <!-- 组件ed341f40-a94f-11ed-bd7f-59a82614e004结束-->
+
+      <!-- 组件ee494e37-030d-45e3-8ec4-d3cae0e0f821开始-->
+
+      <div id="itemee494e37-030d-45e3-8ec4-d3cae0e0f821">
+        <img
+          src="./static/images/afd8c58d-4dbb-4d76-8e0d-b902f53365d6.png"
+          alt=""
+        />
+      </div>
+      <style>
+        #itemee494e37-030d-45e3-8ec4-d3cae0e0f821 {
+          width: 1916.5px;
+          height: 92px;
+        }
+        #itemee494e37-030d-45e3-8ec4-d3cae0e0f821 img {
+          width: 100%;
+          height: 100%
+        }
+      </style>
+      <!-- 组件ee494e37-030d-45e3-8ec4-d3cae0e0f821结束-->
+
+      <!-- 分组ead80d10-aadf-11ed-a84e-396548434efa开始-->
+      <div id="itemead80d10-aadf-11ed-a84e-396548434efa">
+        <!-- 组件68768431-6651-4857-8065-79bb928e6075开始-->
+
+        <div id="item68768431-6651-4857-8065-79bb928e6075">
+          <img
+            src="./static/images/e187d79b-7de3-4bd0-90e0-b97990664f12.png"
+            alt=""
+          />
+        </div>
+        <style>
+          #item68768431-6651-4857-8065-79bb928e6075 {
+            width: 749.91px;
+            height: 941.46px;
+          }
+          #item68768431-6651-4857-8065-79bb928e6075 img {
+            width: 100%;
+            height: 100%
+          }
+        </style>
+        <!-- 组件68768431-6651-4857-8065-79bb928e6075结束-->
+
+        <!-- 组件f9c018e0-a94f-11ed-bd7f-59a82614e004开始-->
+
+        <div id="itemf9c018e0-a94f-11ed-bd7f-59a82614e004">
+          <img src="" alt="" />
+          <svg
+            width="100%"
+            height="100%"
+            viewBox="0 0 183 111"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="183" height="111" fill="#14202D" />
+            <circle cx="130.552" cy="24.8774" r="6" fill="#43E8F3" />
+            <path
+              opacity="0.5"
+              d="M131.509 74L80.0186 111H183L131.509 74Z"
+              fill="url(#paint0_linear_1233:1875)"
+            />
+            <path
+              d="M66.1027 56.6328L0 111H132.205L66.1027 56.6328Z"
+              fill="url(#paint1_linear_1233:1875)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_1233:1875"
+                x1="131.797"
+                y1="112.088"
+                x2="141.911"
+                y2="79.5955"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#3D9CFF" />
+                <stop offset="1" stop-color="#43E8F3" />
+              </linearGradient>
+              <linearGradient
+                id="paint1_linear_1233:1875"
+                x1="66.4719"
+                y1="112.599"
+                x2="83.0284"
+                y2="66.1275"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#3D9CFF" />
+                <stop offset="1" stop-color="#43E8F3" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <script type="text/javascript">
+          $(function() {
+              // 基于准备好的dom，初始化echarts实例
+              // 指定图表的配置项
+              let option = {};
+
+              // 指定文字的数据
+              let data = [{"url":"https://cdn.staticaly.com/gh/powerli2002/project-img@main/QQ图片20230210174633.2w8vg4ri8hi0.jpg"}]
+
+              data = data.map(item =>{
+                return {url: item['url']}
+              })
+              $("#itemf9c018e0-a94f-11ed-bd7f-59a82614e004 img").attr("src", data[0].url)
+              if(data[0].url) {
+                $("#itemf9c018e0-a94f-11ed-bd7f-59a82614e004 svg").css('display', 'none')
+                $("#itemf9c018e0-a94f-11ed-bd7f-59a82614e004 img").css('display', 'block')
+              }else {
+                $("#itemf9c018e0-a94f-11ed-bd7f-59a82614e004 img").css('display', 'none')
+                $("#itemf9c018e0-a94f-11ed-bd7f-59a82614e004 svg").css('display', 'block')
+              }
+          })
+        </script>
+
+        <style>
+          #itemf9c018e0-a94f-11ed-bd7f-59a82614e004{
+            width: 688.28px;
+            height: 893.5px;
+          }
+          #itemf9c018e0-a94f-11ed-bd7f-59a82614e004 img {
+            width: 100%;
+            height: 100%;
+          }
+        </style>
+        <!-- 组件f9c018e0-a94f-11ed-bd7f-59a82614e004结束-->
+      </div>
+      <!-- 分组ead80d10-aadf-11ed-a84e-396548434efa结束-->
+    </div>
+  </body>
+  <script>
+
+
+
+
+
+
+      $(function () {
+
+
+            /**
+             *
+             * 自适应宽度处理
+             * 通过当前网页具体宽高 / 设计稿画板实际宽高 得到比例最终缩放页面
+             *
+             * 如果是同比例，比如12:9的尺寸比例，不管分辨率多大，都是能完全适应且不会被拉伸
+             * 如果不是在同一比例，简单来就像图片改变了比例就会被拉升
+             *
+             * 具体大小可自行设置，下面这句话也可以不要，修改style.css样式也可以，方法很多
+             *
+             */
+
+
+
+
+
+              document.getElementsByClassName("container")[0].style.transform = `scaleX(${window.innerWidth / 1920}) scaleY(${window.innerHeight / 1080})`
+
+
+
+
+
+      })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          playAnimation('#location5', [{"type":"rubberBand","name":"抖动","delayed":0,"loop":false,"frequency":1,"duration":1,"isPlayer":false,"isDisabled":false}])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          playAnimation('#location10', [{"type":"rubberBand","name":"抖动","delayed":0,"loop":false,"frequency":1,"duration":1,"isPlayer":false,"isDisabled":false}])
+
+
+
+
+
+
+
+
+
+          playAnimation('#location8', [{"type":"rubberBand","name":"抖动","delayed":0,"loop":false,"frequency":1,"duration":1,"isPlayer":false,"isDisabled":false}])
+
+
+
+
+
+
+
+
+
+          playAnimation('#location2', [{"type":"rubberBand","name":"抖动","delayed":0,"loop":false,"frequency":1,"duration":1,"isPlayer":false,"isDisabled":false}])
+
+
+
+
+
+
+
+
+
+          playAnimation('#location3', [{"type":"rubberBand","name":"抖动","delayed":0,"loop":false,"frequency":1,"duration":1,"isPlayer":false,"isDisabled":false}])
+
+
+
+
+
+
+
+
+
+          playAnimation('#location6', [{"type":"rubberBand","name":"抖动","delayed":0,"loop":false,"frequency":1,"duration":1,"isPlayer":false,"isDisabled":false}])
+
+
+
+
+
+
+
+
+
+          playAnimation('#location4', [{"type":"rubberBand","name":"抖动","delayed":0,"loop":false,"frequency":1,"duration":1,"isPlayer":false,"isDisabled":false}])
+
+
+
+
+
+
+
+
+
+          playAnimation('#location7', [{"type":"rubberBand","name":"抖动","delayed":0,"loop":false,"frequency":1,"duration":1,"isPlayer":false,"isDisabled":false}])
+
+
+
+
+
+
+
+
+
+          playAnimation('#location_in2', [{"type":"flip","name":"翻转","delayed":0,"loop":false,"frequency":1,"duration":1,"isPlayer":false,"isDisabled":false}])
+
+
+
+
+
+
+
+
+
+          playAnimation('#location_in1', [{"type":"rubberBand","name":"抖动","delayed":0,"loop":false,"frequency":1,"duration":1,"isPlayer":false,"isDisabled":false},{"type":"flip","name":"翻转","delayed":0,"loop":false,"frequency":1,"duration":1,"isPlayer":false,"isDisabled":false}])
+
+
+
+
+
+
+
+
+
+          playAnimation('#location9', [{"type":"rubberBand","name":"抖动","delayed":0,"loop":false,"frequency":1,"duration":1,"isPlayer":false,"isDisabled":false}])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /**
+     *
+     * @param {*} id
+     * @param {*} animations
+     * 执行动画库函数【不用修改,可自行调整位置】
+     * 声明初始值
+     * 判断动画是否结束
+     */
+    function playAnimation(id, animations){
+
+      let index = 0
+      let ele  = document.querySelector(id)
+      setAnimation(ele,animations[index])
+      ele.addEventListener('webkitAnimationEnd', function(){
+        if(index < animations.length - 1){
+          index ++
+          setAnimation(ele,animations[index])
+        }
+      })
+    }
+
+    /**
+     *
+     * @param {*} element
+     * @param {*} animation
+     * 执行动画库函数【不用修改,可自行调整位置】
+     * 取index对应的动画
+     * 给元素animation重新赋值
+     */
+    function setAnimation(element,animation) {
+      const action = `${animation.duration * 1000}ms ease ${animation.delayed * 1000}ms ${animation.loop ? "infinite" : animation.frequency} normal both running ${animation.type}`
+      element.style.animation = action
+    }
+  </script>
+</html>
